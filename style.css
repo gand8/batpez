@@ -1,0 +1,6 @@
+body { background: #06131f; color: white; font-family: sans-serif; text-align: center; }
+.pantalla { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.oculto { display: none !important; }
+button { padding: 15px; margin: 10px; cursor: pointer; }
+input { padding: 10px; margin: 10px; width: 80%; max-width: 300px; }
+#respuesta-coach { background: #10293d; padding: 15px; border-radius: 8px; margin: 10px; max-width: 80%; }

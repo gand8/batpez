@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BatPez IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="pantalla-inicio" class="pantalla">
+        <h1>🐟 BATPEZ IA</h1>
+        <button onclick="cambiarPantalla('pantalla-dias')">INICIAR MISIÓN</button>
+    </div>
+
+    <div id="pantalla-dias" class="pantalla oculto">
+        <h1>📆 SELECCIONE DÍA</h1>
+        <button onclick="verDia('Lunes')">Lunes</button>
+        <button onclick="verCoach()">🧠 COACH</button>
+    </div>
+
+    <div id="pantalla-misiones" class="pantalla oculto">
+        <h1 id="titulo-dia">Día</h1>
+        <div id="horario-contenedor"></div>
+        <button onclick="cambiarPantalla('pantalla-dias')">⬅ Volver</button>
+    </div>
+
+    <div id="pantalla-coach" class="pantalla oculto">
+        <h1>🧠 COACH BATPEZ</h1>
+        <div id="respuesta-coach">El maestro está listo...</div>
+        <input id="input-pregunta" placeholder="Tu pregunta...">
+        <button onclick="preguntarCoach()">Consultar</button>
+        <button onclick="cambiarPantalla('pantalla-dias')">⬅ Volver</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

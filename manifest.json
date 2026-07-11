@@ -1,0 +1,9 @@
+{
+  "name": "BatPez IA",
+  "short_name": "BatPez",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#06131f",
+  "theme_color": "#4cc9ff"
+}
+
